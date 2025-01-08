@@ -5,3 +5,5 @@ ipykernel
 faker
 fastapi
 uvicorn
+fastparquet
+pyarrow

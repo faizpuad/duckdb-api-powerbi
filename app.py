@@ -41,7 +41,7 @@ async def get_banking_data(api_key: APIKey = Depends(get_api_key)):
     try:
         # Connect to DuckDB
         logger.debug("Connecting to database...")
-        conn = duckdb.connect('../database/banking_data.duckdb', read_only=True)
+        conn = duckdb.connect('./database/banking_data.duckdb', read_only=True)
         
         # Execute query
         logger.debug("Executing query...")
