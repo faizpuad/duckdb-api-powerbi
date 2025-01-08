@@ -11,7 +11,7 @@ table_name = 'banking_data'
 csv_files = [os.path.join(data_folder, f) for f in os.listdir(data_folder) if f.endswith('.csv')]
 
 # soecify duckdb database
-conn = duckdb.connect('banking_data.duckdb')
+conn = duckdb.connect(db_file)
 
 # Load data into DuckDB
 for csv_file in csv_files:
