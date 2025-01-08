@@ -1,0 +1,7 @@
+duckdb
+pandas
+requests
+ipykernel
+faker
+fastapi
+uvicorn
